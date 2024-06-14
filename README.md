@@ -1,6 +1,5 @@
 ### README.md
 
-```markdown
 # Custom Nginx RPM with WebDAV, HTTP/2, SSL, and PHP-FPM Authentication
 
 This repository provides a custom build of Nginx with WebDAV, HTTP/2, SSL support, and PHP-FPM for authentication using MySQL. This build removes the Lua and LuaJIT dependencies and adds necessary modules for the specified functionalities.
@@ -17,6 +16,11 @@ The following modules are included in this custom Nginx build:
 - **Stream SSL Module**: Provides SSL/TLS support for the stream module.
 - **File AIO**: Enables asynchronous I/O.
 - **HTTP Perl Module**: Allows the use of Perl scripts within Nginx.
+
+## Releases
+
+```nginx-1.27.0-1.el9.x86_64.rpm``` | Tested on AlmaLinux release 9.4 (Seafoam Ocelot)
+
 
 ## Building the RPM
 
@@ -453,6 +457,3 @@ If you encounter issues, check the following:
 - Check Nginx error logs for detailed error messages: `sudo tail -f /var/log/nginx/error.log`
 
 Feel free to open an issue if you encounter any problems or have any questions.
-```
-
-Plaats deze `README.md` file in de root directory van je project. Deze handleiding zorgt ervoor dat alle benodigde informatie voor het bouwen, installeren en configureren van de aangepaste Nginx RPM beschikbaar is.
