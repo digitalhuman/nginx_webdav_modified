@@ -179,6 +179,11 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
+
+header('WWW-Authenticate: Basic realm="Restricted"');
+header('HTTP/1.0 401 Unauthorized');
+echo 'Authentication failed';
+exit;
 ?>
 ```
 
