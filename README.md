@@ -334,9 +334,6 @@ http {
 
     server_names_hash_bucket_size 100;
 
-    map $http_cookie $session_cookie {
-       default '';  # Standaard worden alle cookies genegeerd
-    }
     # map the list of user agents must escape ( with \(
     map $http_user_agent $mobile_user {
         default "WPBULLET_DESKTOP";
