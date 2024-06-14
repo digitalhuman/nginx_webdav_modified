@@ -370,6 +370,9 @@ http {
         default 1;
     }
 
+    fastcgi_no_cache       $no_cache;
+    fastcgi_cache_bypass   $no_cache;
+    
     map $http_upgrade $connection_upgrade {
         default upgrade;
         '' close;
